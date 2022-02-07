@@ -208,9 +208,8 @@ The hash table has the following methods:
 
 * add: Add a key-value pair
 * remove: Delete a key-value pair
-* lookup: Find a corresponding value using a key
-<br>
-**Example:** <br>
+* lookup: Find a corresponding value using a key<br>
+**Example:**<br>
 function HashTable() {<br>
   let storage = [];<br>
   const storageLimit = 4;<br>
@@ -233,4 +232,4 @@ https://codeburst.io/javascript-essentials-types-data-structures-3ac039f9877b
 
 https://www.educative.io/blog/javascript-data-structures
 
-https://betterprogramming.pub/8-common-data-structures-in-javascript-3d3537e69a27
+https://betterprogramming.pub/8-common-data-structures-in-javascript-3d3537e69a2
