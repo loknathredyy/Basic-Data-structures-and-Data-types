@@ -210,7 +210,7 @@ The hash table has the following methods:
 * remove: Delete a key-value pair
 * lookup: Find a corresponding value using a key
 <br>
-**Example:**<br>
+**Example:** <br>
 function HashTable() {<br>
   let storage = [];<br>
   const storageLimit = 4;<br>
