@@ -232,4 +232,4 @@ https://codeburst.io/javascript-essentials-types-data-structures-3ac039f9877b
 
 https://www.educative.io/blog/javascript-data-structures
 
-https://betterprogramming.pub/8-common-data-structures-in-javascript-3d3537e69a2
+https://betterprogramming.pub/8-common-data-structures-in-javascript-3d3537e69a27
