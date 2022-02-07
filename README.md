@@ -34,12 +34,33 @@ The number type has three symbolic values: +Infinity, -Infinity, and NaN (not-a-
 (-Infinity)
 ## 3.Boolean:
 Boolean represents a logical entity and can have two values: true and false.
+
+**Example:**<br>
+Boolean(10 > 9) <br>
+(True)<br>
+Boolean(10 < 9)<br>
+(False)<br>
 ## 4.Null type:
 The Null type has exactly one value: null. See null and Null for more details.
+
+**Example:**<br>
+var myVar = null;<br>
+alert(myVar); <br>
+(null type)<br>
+
 ## 5.Undefined:
 A variable that has not been assigned a value has the value undefined. See undefined and Undefined for more details.
+
+**Example:**<br>
+var myVar;<br>
+alert(myVar);<br> (undefined)
+
 ## 6.Symbol:
 A Symbol is a unique and immutable primitive value and may be used as the key of an Object property (see below). In some programming languages, Symbols are called "atoms".
+
+**Example:**<br>
+const x = Symbol()<br>
+typeof x;<br>  (symbol)
 ## 7.BigInt:
 The BigInt type is a numeric primitive in JavaScript that can represent integers with arbitrary precision. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit for Numbers.
 
@@ -145,6 +166,7 @@ A unilateral linked list normally has following methods:
 * elementAt: Return the node of an index
 * addAt: Insert a node at a specific index
 * removeAt: Delete a node at a specific index
+  
 **Example:**<br>
 function LinkedList() {  
         var length = 0;  
@@ -189,25 +211,17 @@ The hash table has the following methods:
 * lookup: Find a corresponding value using a key
 <br>
 **Example:**<br>
-function hash(string, max) {
-  var hash = 0;
-  for (var i = 0; i < string.length; i++) {
-    hash += string.charCodeAt(i);
-  }
-  return hash % max;
-}
+function HashTable() {<br>
+  let storage = [];<br>
+  const storageLimit = 4;<br>
 
-function HashTable() {
-  let storage = [];
-  const storageLimit = 4;
-
-  this.add = function (key, value) {
-    var index = hash(key, storageLimit);
-    if (storage[index] === undefined) {
-      storage[index] = [
-        [key, value]
-      ];
-    } 
+  this.add = function (key, value) {<br>
+    var index = hash(key, storageLimit);<br>
+    if (storage[index] === undefined) {<br>
+      storage[index] = [<br>
+        [key, value]<br>
+      ];<br>
+    } <br>
 }<br>
 
 * # References:
